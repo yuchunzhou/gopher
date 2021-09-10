@@ -98,7 +98,7 @@ func updateProject(path string) {
 		return
 	}
 
-	fmt.Println("Updated project", base)
+	fmt.Println("Updated Git project", base)
 }
 
 func main() {
@@ -124,7 +124,7 @@ func main() {
 		},
 		{
 			Name:  "update",
-			Usage: "Update git projects",
+			Usage: "Update Git projects",
 			Action: func(c *cli.Context) error {
 				var wg sync.WaitGroup
 				if c.Args().Len() == 0 {
