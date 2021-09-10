@@ -155,7 +155,6 @@ func main() {
 						}(path)
 					}
 				} else {
-
 					for _, path := range c.Args().Slice() {
 						wg.Add(1)
 						go func(path string) {
