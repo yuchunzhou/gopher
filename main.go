@@ -146,7 +146,6 @@ func main() {
 						}
 					}
 
-					fmt.Println(paths)
 					for _, path := range paths {
 						wg.Add(1)
 						go func(path string) {
